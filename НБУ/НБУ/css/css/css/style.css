@@ -1,0 +1,244 @@
+body{
+    font-family: system-ui;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+/*         GLOBAL     */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+/*       Header      */
+header{
+    background:#ff8c00e0;
+    color: black; /**Лого цвят 2*/
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;   /****BOREDER-BOTTOM***/
+}
+
+header a{
+    color: black; /**Цвят на навигация 2*/
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: white;   /**Цвят на лого и навигация**/
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #e8491d;    /******HOVER*****/
+    font-weight: bold;
+}
+
+
+/*   Showcase       */
+#showcase{
+   /min-height: 600px;
+    /*    --------  ОПРАВИ СНИМКАТА--------------     */
+    text-align: center;
+    color: white;
+}
+#showcase{
+    background-image: url(../../../Images/footer-pic.jpg);
+    background-position: 0 -350px;
+}
+
+#showcase h3{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/*   Newsletter     */
+#newsletter {
+    padding: 15px;
+    color: #ff8c00e0;
+    background-color: black;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button_1{
+    height: 38px;
+    background-color: #ff8c00e0;
+}
+
+/*        Boxes     */
+#boxes{
+    margin: 20px;
+    color: white;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 300px;   /* Как да си оправям рамера на обявите*/
+    height: 200px;
+}
+
+/*           Footer       */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:white;
+    background-color:#ff8c00e0;
+    text-align: center;
+}
+
+/*********************************MEDIA********************************/
+@media(max-width:768px){
+    header #branding,
+    header nav,
+    header nav li
+    #newsletter h1
+    #newsletter form
+    #boxes .box{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+       text-align: center;
+        height: auto;
+    }
+
+    #newsletter .button_1 .button_2{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+
+    }
+    .box{
+        display: block;
+        justify-self: center;
+        margin-right: 10px;
+        text-align: center;
+    
+    }
+    html{
+        max-width: 100%;
+    }
+}
+
+/*                                      MOBILE */
+@media(max-width:500px){
+   html{max-width: 100%;} 
+}
+
+/************************************************ CARS ********************************/
+
+/*    Boxes button  */
+.button_2{
+    height: 38px;
+    background-color: #ff8c00e0;   
+}
+
+/***************************************** CONTACTS *****************************************/
+
+#boxes_contacts{
+    margin: 20px;
+    color: white;
+}
+
+#boxes_contacts .box_contacts{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes_contacts .box_contacts img{
+    width: 80px;   /* Как да си оправям рамера на обявите*/
+    height: 80px;
+}
+
+
+/*****************************************FOR US******************************************/
+
+/****************************************CAR_1*******************************************/
+
+#car_photo .container img{
+    width: 700px;
+    height: 500px;      
+}
+
+#sidebar{
+    float: right;
+    width: 35%;
+    margin-top: 10px;
+}
+
+#car_photo_col{
+    float: left;
+    width: 60%;
+}
+
+.boxes_ul{
+    list-style-type: none;
+}
